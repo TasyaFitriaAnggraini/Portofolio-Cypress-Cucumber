@@ -1,0 +1,22 @@
+{
+  "name": "cypress-automation-taks",
+  "version": "1.0.0",
+  "description": "Cypress Cucumber Automation Taks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tasya Fitria Anggraini",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "cypress": "^13.14.2",
+    "ts-loader": "^9.5.1"
+  },
+  "cypress-cucumber-preprocessor" : {
+    "nonGlobalStepdifinitions": false,
+    "stepDefinitions": "cypress/e2e/cucumber/stepDefinitions/*.js"
+  }
+
+}
